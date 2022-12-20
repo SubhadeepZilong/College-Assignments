@@ -1,0 +1,14 @@
+
+;Determine number of 1s in a number
+
+LDA 2030H
+MVIC 00H
+MVI B, 09H
+DCR B
+JZ 2013H
+RLC
+JNC 2007H
+JMP 2007H
+MOV A, C
+STA 2031H
+RST 1

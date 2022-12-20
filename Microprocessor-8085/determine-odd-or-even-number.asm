@@ -1,0 +1,13 @@
+
+
+;Determine odd or even number
+
+MVI A, 81H
+ANI 01H
+JZ 200DH
+MVI A, 11H
+STA 2050H
+RST 1
+MVI A, 00H
+STA 2050H
+RST 1

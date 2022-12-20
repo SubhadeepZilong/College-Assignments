@@ -1,0 +1,15 @@
+
+;Division of two 8 bit numbers
+
+MVI A, 09H
+MVI B, 02H
+MVI C, 00H
+CMP B
+JC 200FH
+SUB B
+INR C
+JMP 2006H
+STA 2050H
+MOV A,C
+STA 2051H
+RST 1
